@@ -1,0 +1,8 @@
+pressure = float(input("Please Enter pressure in Kilopascals: ")) 
+psi = pressure * 0.145038 
+mercury = pressure * 7.50062 
+atmo = pressure * 0.00986923 
+
+print(f"Pounds per square inch: {psi:.2f} PSI") 
+print(f"Millimeters of Mercury: {mercury:.2f} mmHg") 
+print(f"Atmosphere: {atmo:.2f} atm") 
