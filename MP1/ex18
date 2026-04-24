@@ -1,0 +1,9 @@
+import math 
+radius = input("Please input the radius: ") 
+radius = int(radius) 
+height = input("Please input the height: ") 
+height = int(height) 
+cylinder = math.pi * math.pow(radius, 2) * height 
+print(f"The radius is: {radius}") 
+print(f"The height is: {height}") 
+print(f"The volume is of the cylinder is: {cylinder:.1f}") 
