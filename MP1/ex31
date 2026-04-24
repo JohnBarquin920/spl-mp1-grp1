@@ -1,0 +1,14 @@
+num = input("Enter a four-digit number: ")
+try:
+  four_digits = int(num)
+  if 1000 <= four_digits <= 9999:
+    d1 = four_digits // 1000
+    d2 = (four_digits // 100) % 10
+    d3 = (four_digits // 10) % 10
+    d4 = four_digits % 10
+    total_sum = d1 + d2 + d3 + d4
+    print(f"{d1} + {d2} + {d3} + {d4} = {total_sum}")
+  else:
+    print("Enter a proper four-digit number.")
+except ValueError:
+  print("Invalid! Enter a proper four-digit number.")
