@@ -1,0 +1,4 @@
+width = float(input("Enter room width (m): "))
+length = float(input("Enter room length (m): "))
+area = width * length
+print(f"The room has an area of {area:.4f} m²")
