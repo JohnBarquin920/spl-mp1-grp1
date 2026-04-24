@@ -1,0 +1,12 @@
+cents = int (input()) 
+print (f"Toonies: {cents // 200}") 
+cents %=200 
+print (f"Loonies: {cents // 100}") 
+cents %=100 
+print (f"Quarters: {cents // 25}") 
+cents %=25 
+print (f"Dimes : {cents // 10}") 
+cents %= 10 
+print (f"Nickels: { cents // 5}") 
+cents %= 5 
+print (f"Pennies: {cents}" ) 
