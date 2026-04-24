@@ -1,0 +1,12 @@
+print("EXERCISE 32: SORT 3 INTEGERS\n") 
+
+a = int(input("Enter first integer: ")) 
+b = int(input("Enter second integer: ")) 
+c = int(input("Enter third integer: ")) 
+
+smallest = min(a, b, c) 
+largest = max(a, b, c) 
+
+middle = (a + b + c) - smallest - largest 
+
+print("\nSorted order:", smallest, middle, largest) 
