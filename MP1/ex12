@@ -1,0 +1,26 @@
+print("EXERCISE 12: DISTANCE BETWEEN TWO POINTS ON EARTH\n") 
+print("Hello! Please enter the coordinates in degrees.\n") 
+
+import math 
+
+print("Coordinates of Point 1:") 
+lat1 = float(input("Enter latitude of point 1: ")) 
+lon1 = float(input("Enter longitude of point 1: ")) 
+
+print("\nCoordinates of Point 2:") 
+lat2 = float(input("Enter latitude of point 2: ")) 
+lon2 = float(input("Enter longitude of point 2: ")) 
+
+lat1 = math.radians(lat1) 
+lon1 = math.radians(lon1) 
+lat2 = math.radians(lat2) 
+lon2 = math.radians(lon2) 
+
+radius = 6371.01 
+
+distance = radius * math.acos( 
+    math.sin(lat1) * math.sin(lat2) + 
+    math.cos(lat1) * math.cos(lat2) * math.cos(lon1 - lon2) 
+) 
+
+print(f"\nThe distance between the two points is {distance:.2f} kilometers.") 
