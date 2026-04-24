@@ -1,0 +1,16 @@
+print("EXERCISE 20: IDEAL GAS LAW \n") 
+print("Hello! Please enter the values in Pascals, liters, and Celsius.\n") 
+
+import cmath 
+
+R = 8.314  
+
+pressure = complex(input("Enter pressure: ")) 
+volume = float(input("Enter volume: ")) 
+celsius = float(input("Enter temperature: ")) 
+
+temperature = complex(celsius + 273.15) 
+
+moles = (pressure * volume) / (R * temperature) 
+
+print(f"\nThe amount of gas is {moles:.2f} moles.") 
