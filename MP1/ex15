@@ -1,0 +1,14 @@
+while True:
+  try:
+    feet = float(input("Enter a measurement in feet: "))
+    if feet > 0:
+      break
+    print("Enter a value greater than 0.")
+  except ValueError:
+    print("Invalid! Enter a proper value.")
+    
+to_inch = feet * 12
+to_yard feet / 3
+to_mile = feet / 5280
+
+print(f"{feet) ft has an equivalent distance of {to_inch:.4f) in., {to_yard:.4f) yd., and {to_mile:.4f} miles.")
