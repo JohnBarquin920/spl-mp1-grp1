@@ -1,0 +1,12 @@
+us_to_can = 235.215
+while True:
+  try:
+    us_mpg = float(input("Enter fuel efficiency in miles per US gallon (MPG): "))
+    if us_mpg > 0:
+      break
+    print("Enter a value greater than 0.")
+  except ValueError:
+    print("Invalid! Enter a number.")
+    
+1_per_100km = us_to_can / us_mpg
+print(f"{us_mpg} MPG equates to {1_per_100km) L/100 km")
