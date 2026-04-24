@@ -1,0 +1,13 @@
+print("EXERCISE 28: WIND CHILL\n") 
+print("Hello! Please enter the values in degrees celcius and km per hour.\n") 
+
+temperature = float(input("Enter the air temperature: ")) 
+wind_speed = float(input("Enter the wind speed: ")) 
+
+if temperature <= 10 and wind_speed > 4.8: 
+    wci = 13.12 + (0.6215 * temperature) - (11.37 * (wind_speed ** 0.16)) \ 
+          + (0.3965 * temperature * (wind_speed ** 0.16)) 
+    
+    print("\nThe wind chill index is:", round(wci)) 
+else: 
+    print("\nThe wind chill index formula is only valid for temperatures <= 10°C", "and wind speeds greater than 4.8 km/h.") 
