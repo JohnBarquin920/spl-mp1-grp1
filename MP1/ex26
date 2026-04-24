@@ -1,0 +1,3 @@
+import time 
+asctime = time.asctime() 
+print(f"The current date and time is: ", {asctime}) 
