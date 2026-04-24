@@ -1,0 +1,12 @@
+while True:
+  try:
+    pos_int = int(input("Enter a positive integer: "))
+    if pos_int > 0:
+      break
+    print("Enter a number greater than 0.")
+  except ValueError:
+    print("Invalid. Enter a whole number.")
+    
+total_sum = (pos_int * (pos_int + 1)) // 2
+
+print(f"The sum of all integers from 1 to {pos_int} is {int(total_sum)}")
