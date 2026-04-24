@@ -1,0 +1,9 @@
+mass = float(input("Enter mass in grams: ")) 
+temp_change = float(input("Enter temperature change: ")) 
+
+joules = mass * 4.186 * temp_change 
+print (f"Joules: {joules}") 
+
+kwh = joules / 3600000 
+cost = kwh * 8.9 
+print (f"Cost: {cost:.2f} cents") 
