@@ -1,0 +1,8 @@
+items = input() 
+items = int(items) 
+tax = 0.20 
+tip = 0.18 
+wtax = items * tax 
+wtip = wtax * tip 
+sum = items + wtax + wtip 
+print (f"Your total is: {sum:.2f}") 
