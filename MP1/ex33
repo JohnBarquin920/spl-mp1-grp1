@@ -1,0 +1,8 @@
+loaves = int (input()) 
+regular_price = loaves * 3.49 
+discount = regular_price * 0.06 
+total = regular_price - discount 
+
+print (f"Regular Price {regular_price: 6.2f}") 
+print (f"Discount: {discount: 6.2f}") 
+print(f"Total Price:     {total:6.2f}") 
