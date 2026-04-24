@@ -1,0 +1,14 @@
+import math
+while True:
+  try:
+    s_length = float(input("Enter the length of a side: "))
+    n_sides = float(input("Enter the number of sides: "))
+    if s_length >= 0 and n_sides > 0:
+      break
+    else:
+    print("Enter proper values.")
+  except ValueError:
+    print("Invalid! Enter proper values.")
+    
+pol_area = (n_sides * (s_length ** 2)) / (4 * math.tan(math.pi / n_sides))
+print(f"The area of the regular polygon is {pol_area:.4f} sq units")
