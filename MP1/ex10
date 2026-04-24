@@ -1,0 +1,11 @@
+import math 
+a = 5 
+b = 6 
+print(a + b) 
+print(b - a) 
+print(a * b) 
+quotient = a / b 
+print(f"{quotient:.2f}") 
+print(a % b) 
+print(f"{math.log10(a):.2f}") 
+print(a ** b) 
