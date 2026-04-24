@@ -1,0 +1,10 @@
+print("EXERCISE 4: FIELD AREA CALCULATOR") 
+print("\nHello! Please enter the measurements in feet.\n") 
+
+length = input("Enter the length of the field: ") 
+width = input("Enter the width of the field: ") 
+area = int (length) * int (width) 
+acres = area * 0.00002296 
+
+print(f"\nThe total area of the field is: {acres} acres.\n") 
+print("Thank you for stopping by!") 
