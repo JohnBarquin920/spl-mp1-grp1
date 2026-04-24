@@ -1,0 +1,11 @@
+height = float(input("Enter height of the individual (inches or meters): "))
+weight = float(input("Enter weight of the individual (if entered inches, enter lbs. if entered meters, must enter kg): "))
+
+if 107 > height > 22 and 1400 > weight > 4.7: #in, lbs
+  bmi (weight / (height ** 2)) * 703
+  print (f"The body mass index (BMI) of this individual is {bmi:.3f} kg/m2")
+elif 2.72 > height > 0.5 and 635 > weight > 2.1: #m, kg
+  bmi_2 = (weight / (height ** 2))
+  print(f"The body mass index (BMI) of this individual is {bmi_2:.3f} kg/m2")
+else:
+  print("Invalid! Input proper values.")
