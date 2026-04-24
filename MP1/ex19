@@ -1,0 +1,14 @@
+initial_speed = 0 #m/s
+acceleration_due_to_gravity = 9.8 #m/s²
+
+while True:
+  try:
+    height = float(input("Enter the height from which the object is dropped (m): "))
+    if height >= 0:
+      break
+    print("Enter a positive value")
+  except ValueError:
+    print("Invalid! Enter a proper value.")
+    
+final_velocity = (2 * acceleration_due_to_gravity * height) ** 0.5
+print(f"The object's final speed is {final_velocity:.4f) m/s ")
