@@ -1,0 +1,15 @@
+print("EXERCISE 8: WIDGETS AND GIZMOS\n") 
+
+wid = input("Enter total widgets ordered: ") 
+giz = input("Enter total gizmo ordered: ") 
+
+orders = (int (wid) + int (giz)) 
+
+print(f"\nYour total order is: {orders}") 
+
+w1 = int (wid) * 75 
+w2 = int (giz) * 112 
+
+weight = (int (w1) + int (w2)) 
+
+print(f"The total weight of the order is: {weight} grams") 
