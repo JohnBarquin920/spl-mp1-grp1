@@ -1,0 +1,8 @@
+foot = input(f"Please enter your FEET in height: ") 
+foot = float(foot) 
+feet = foot * 30.48 
+inch = input(f"Please enter your INCH in height: ") 
+inch = float(inch) 
+inchcentimeters = inch * 2.54 
+sum = feet + inchcentimeters 
+print(f"Your height in centimeters is: {sum}") 
